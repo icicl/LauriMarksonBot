@@ -1,0 +1,17 @@
+{
+  "name": "threebotsinone",
+  "version": "1.0.0",
+  "description": "Three Discord bots in one.",
+  "main": "threeInOne.js",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "spellchecker": "^3.5.2",
+    "write-good": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edward Wang",
+  "license": "ISC"
+}
