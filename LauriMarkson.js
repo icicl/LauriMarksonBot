@@ -40,6 +40,10 @@ LauriMarkson.on("message", async msg => {
 		msg.channel.send("Why aren't you writing this down? Write this down, write this down!");
 		return;
 	}
+	
+	if (msg.content === "") {
+		return;
+	}
 
 	if (msg.channel.id === "485307611240071189") {
 		msg.channel.send("You're still calculating your grade?");
