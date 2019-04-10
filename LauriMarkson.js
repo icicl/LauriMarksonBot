@@ -13,7 +13,16 @@ const lauriResponses = [
 	"Don't make me take out my pink pen.",
 	"Why aren't you writing this down?",
 	"Write this down, write this down!",
-	"Everyone snap for Lexi!"
+	"Everyone snap for Lexi!",
+	"Why aren't you writing this down?",
+	"Why aren't you writing this?",
+	"Why aren't you writing?",
+	"Are you taking notes?",
+	"When I speak, you write.",
+	"Please try to enunciate and speak clearly; I want to be able to hear your voice.",
+	"Very good!",
+	"Shame on you!",
+	"Pardon me."
 ];
 
 LauriMarkson.login("you wish");
@@ -32,6 +41,10 @@ LauriMarkson.on("message", async msg => {
 		return;
 	}
 
+	if (msg.channel.id === "485307611240071189") {
+		msg.channel.send("You're still calculating your grade?");
+	}
+	
 	if (!respond.has(msg.author.id)) {
 		await respond.add(msg.author.id);
 	}
